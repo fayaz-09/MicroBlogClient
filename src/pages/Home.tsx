@@ -111,6 +111,7 @@ function Home()
                 </div>}
             <div className="PostsMain">
                 <h1>Global Posts</h1>
+                {posts != null && <div>
                 {posts.map((post)=>(
                     <div className="post" key={post.idposts}>
                         <div className="content">
@@ -135,7 +136,7 @@ function Home()
                             </div>
                         </div>
                     </div>
-                ))}
+                ))} </div>}
             </div>
         </div>
     );
